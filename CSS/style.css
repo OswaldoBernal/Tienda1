@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.inicio{
+    background-image: url("/IMG/bg-reloj.webp");
+    background-position: center;
+    background-size: cover;
+    height:100vh;  
+}
+
+.name-logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+}
+
+.name-logo:hover {
+    color: white;
+}
+
+.Aurum-logo {
+    width: 50px;
+}
+
+.navbar {
+    background: linear-gradient(90deg, #0b3e27, #197149);
+    padding: .3rem;
+}
+
+.nav-link {
+    margin-right: 10px;
+    margin-left: 10px;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    font-weight: 600;
+    font-size: clamp(1rem, 1rem + 0.3125vw, 1rem);
+    transition: all .5s ease-in-out;
+    border-radius: .5rem;
+}
+
+.nav-link:hover {
+    background: #197149;
+    color: white;
+}
+
+.nav-link:active {
+    background: #197149;
+    color: white;
+}
+
+.btn-search {
+    color: white;
+    border: solid 1px white;
+}
+
+.btn-search:hover {
+    background: #1d4633;
+}
+.container{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.card-title {
+    font-family: 'Oswald', sans-serif;
+}
+.btn-outline-seconday{
+    border-color: #1d4633;
+}
+
+.card-text {
+    font-family: 'Raleway', sans-serif;
+}
+
+.col {
+    margin-top: 2rem;
+}
+
+.footer {
+    background: linear-gradient(90deg, #0b3e27, #197149);
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
