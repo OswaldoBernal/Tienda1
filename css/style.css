@@ -4,14 +4,13 @@
 .inicio{
     background-image: url("/IMG/bg-reloj.webp");
     background-position: center;
-    background-size: cover;
+    background-size: cover ;
     height:100vh;  
 }
 .name-logo {
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
 }
-
 .name-logo:hover {
     color: white;
 }
@@ -24,6 +23,11 @@
     font-size: xx-large;
     color: white;
     text-align: center;
+}
+.offcanvas-title{
+    font-family: serif;
+    font-weight: bold;
+    font-size: x-large;
 }
 .LOGOFOTO{
     width: 50px;
@@ -39,22 +43,18 @@
     transition: all .5s ease-in-out;
     border-radius: .5rem;
 }
-
 .nav-link:hover {
     background: #197149;
     color: white;
 }
-
 .nav-link:active {
     background: #197149;
     color: white;
 }
-
 .btn-search {
     color: white;
     border: solid 1px white;
 }
-
 .btn-search:hover {
     background: #1d4633;
 }
@@ -68,17 +68,45 @@
 .btn-outline-seconday{
     border-color: #1d4633;
 }
-
 .card-text {
     font-family: 'Raleway', sans-serif;
 }
-
 .col {
     margin-top: 2rem;
 }
 #boo{
     font-style: oblique;
+    font-size: small;
 }
+/*
+.alert {
+  padding: 20px;
+  background-color: #f44336;
+  color: white;
+  opacity: 1;
+  transition: opacity 0.6s;
+  margin-bottom: 15px;
+}
+
+.alert.success {background-color: #04AA6D;}
+.alert.info {background-color: #2196F3;}
+.alert.warning {background-color: #ff9800;}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
+*/
 .footer {
     background: linear-gradient(90deg, #0b3e27, #197149);
     color: white;
