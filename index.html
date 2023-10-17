@@ -53,19 +53,19 @@
                     Categorias
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#hombre">Hombre</a></li>
-                    <li><a class="dropdown-item" href="#">Mujer
+                    <li><a class="dropdown-item" href="hombre.html">Hombre</a></li>
+                    <li><a class="dropdown-item" href="mujer.html">Mujer
                     </a></li>
-                    <li><a class="dropdown-item" href="#">Unisex</a></li>
+                    <li><a class="dropdown-item" href="unisex.html">Unisex</a></li>
                     <li>
                       <hr class="dropdown-divider">
                     </li>
-                    <li><a class="dropdown-item" href="#">Personalización</a></li>
+                    <li><a class="dropdown-item" href="personalizar.html">Personalizar</a></li>
                   </ul>
                 </li>
               </ul>
               <form class="d-flex mt-3" role="search">
-                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                <input type="text" name="Buscar" placeholder="Buscar..">
                 <button class="btn btn-outline-success" type="submit">Buscar</button>
               </form>
             </div>
@@ -82,9 +82,26 @@
       </section>
     </header>
     <main>
-      <body>
-        
-      </body>
+      <main><div class="alert success" data-aos="fade-up">
+        <span class="closebtn">&times;</span>
+        Hasta <strong>20%</strong> descuento en tu primer compra cuando te combiertes en un miembro de AURUM</div>
+        <script>
+          var close = document.getElementsByClassName("closebtn");
+          var i;
+          
+          for (i = 0; i < close.length; i++) {
+            close[i].onclick = function(){
+              var div = this.parentElement;
+              div.style.opacity = "0";
+              setTimeout(function(){ div.style.display = "none"; }, 600);
+            }
+          }
+          </script></main>
+        <main>
+          <div class="alert alert-info" data-aos="fade-up">
+            <strong>Info!</strong> Sección de Hombre, para ver más de click <a class="Link" href="hombre.html">Hombre</a> .
+          </div>
+        </main>
       <div class="container">
         <div class="row" data-aos="fade-up" id="catalogo">
           <div class="col-lg-4 col-sm-6">
@@ -112,7 +129,7 @@
           <div class="col-lg-4 col-sm-6">
             <div class="card mb-4" style="width: 18rem">
               <img
-                src="./img/reloj-12.webp"
+                src="./img/reloj-2.webp"
                 class="card-img-top img-fluid"
                 alt="Reloj Plateado con detalles rojos"
               />
@@ -134,7 +151,7 @@
           <div class="col-lg-4 col-sm-6">
             <div class="card mb-4" style="width: 18rem">
               <img
-                src="./img/reloj-4.webp"
+                src="./img/reloj-3.webp"
                 class="card-img-top img-fluid"
                 alt="Reloj con detalles dorado para Dama"
               />
@@ -156,7 +173,7 @@
           <div class="col-lg-4 col-sm-6">
             <div class="card mb-4" style="width: 18rem">
               <img
-                src="./img/reloj-5.webp"
+                src="./img/reloj-4.webp"
                 class="card-img-top img-fluid"
                 alt="Reloj basado en temporada de Otoño, decorado con hojas de la temporada"
               />
@@ -178,7 +195,7 @@
           <div class="col-lg-4 col-sm-6">
             <div class="card mb-4" style="width: 18rem">
               <img
-                src="./img/reloj-3.webp"
+                src="./img/reloj-5.webp"
                 class="card-img-top img-fluid"
                 alt="Reloj plateado ocn fondo de colores pasteles"
               />
@@ -219,6 +236,11 @@
               </div>
             </div>
           </div>
+          <main>
+            <div class="alert alert-info" data-aos="fade-left">
+              <strong>Info!</strong> Sección de Mujer, para ver más de click <a class="Link" href="mujer.html">Mujer</a>
+            </div>
+          </main>
           <div class="col-lg-4 col-sm-6">
             <div class="card mb-4" style="width: 18rem">
               <img
@@ -266,7 +288,7 @@
           <div class="col-lg-4 col-sm-6">
             <div class="card mb-4" style="width: 18rem">
               <img
-                src="./img/reloj-10.webp"
+                src="./img/reloj-9.webp"
                 class="card-img-top img-fluid"
                 alt="Reloj negro con detalles dorados para Dama"
               />
@@ -288,7 +310,7 @@
           <div class="col-lg-4 col-sm-6">
             <div class="card mb-4" style="width: 18rem">
               <img
-                src="./img/reloj-9.webp"
+                src="./img/reloj-10.webp"
                 class="card-img-top img-fluid"
                 alt="Reloj base azul plateado con tintes dorados, unisex"
               />
@@ -332,7 +354,7 @@
           <div class="col-lg-4 col-sm-6">
             <div class="card mb-4" style="width: 18rem">
               <img
-                src="./img/reloj-2.webp"
+                src="./img/reloj-12.webp"
                 class="card-img-top img-fluid"
                 alt="Reloj café con detalles dorados. Para Hombre"
               />
@@ -351,6 +373,11 @@
               </div>
             </div>
           </div>
+          <main>
+            <div class="alert alert-info" data-aos="fade-right">
+              <strong>Info!</strong> Sección de Unisex, para ver más de click <a class="Link" href="unisex.html">Unisex</a>.
+            </div>
+          </main>
           <div class="col-lg-4 col-sm-6">
             <div class="card mb-4" style="width: 18rem">
               <img
@@ -398,7 +425,7 @@
   <div class="col-lg-4 col-sm-6">
     <div class="card mb-4" style="width: 18rem">
       <img
-        src="./img/reloj-18.webp"
+        src="./img/reloj-15.webp"
         class="card-img-top img-fluid"
         alt="Reloj café con detalles dorados. Para Hombre"
       />
@@ -464,7 +491,7 @@
 <div class="col-lg-4 col-sm-6">
   <div class="card mb-4" style="width: 18rem">
     <img
-      src="./img/reloj-15.webp"
+      src="./img/reloj-18.webp"
       class="card-img-top img-fluid"
       alt="Reloj café con detalles dorados. Para Hombre"
     />
@@ -482,6 +509,11 @@
     </div>
 </div>
 </div>
+<main>
+  <div class="alert alert-info" data-aos="fade-left">
+    <strong>Info!</strong> Relojes en descuento!!!
+  </div>
+</main>
 <div class="col-lg-4 col-sm-6">
   <div class="card mb-4" style="width: 18rem">
     <img
@@ -593,6 +625,70 @@
   <div class="card mb-4" style="width: 18rem">
     <img
       src="./img/reloj-24.webp"
+      class="card-img-top img-fluid"
+      alt="Reloj café con detalles dorados. Para Hombre"
+    />
+    <div class="card-body">
+      <h5 class="card-title">Heavy Duty</h5>
+      <p class="card-text">
+        Some quick example text to build on the card title and make up
+        the bulk of the card's content.
+      </p>
+      <button type="button" class="btn btn-outline-secondary">
+        Buy Now
+      </button>
+      <button type="button" class="btn btn-outline-secondary">
+        Add to Cart
+      </button>
+    </div>
+</div>
+</div>
+<div class="col-lg-4 col-sm-6">
+  <div class="card mb-4" style="width: 18rem">
+    <img
+      src="./img/reloj-25.webp"
+      class="card-img-top img-fluid"
+      alt="Reloj café con detalles dorados. Para Hombre"
+    />
+    <div class="card-body">
+      <h5 class="card-title">Heavy Duty</h5>
+      <p class="card-text">
+        Some quick example text to build on the card title and make up
+        the bulk of the card's content.
+      </p>
+      <button type="button" class="btn btn-outline-secondary">
+        Buy Now
+      </button>
+      <button type="button" class="btn btn-outline-secondary">
+        Add to Cart
+      </button>
+    </div>
+</div>
+</div><div class="col-lg-4 col-sm-6">
+  <div class="card mb-4" style="width: 18rem">
+    <img
+      src="./img/reloj-26.webp"
+      class="card-img-top img-fluid"
+      alt="Reloj café con detalles dorados. Para Hombre"
+    />
+    <div class="card-body">
+      <h5 class="card-title">Heavy Duty</h5>
+      <p class="card-text">
+        Some quick example text to build on the card title and make up
+        the bulk of the card's content.
+      </p>
+      <button type="button" class="btn btn-outline-secondary">
+        Buy Now
+      </button>
+      <button type="button" class="btn btn-outline-secondary">
+        Add to Cart
+      </button>
+    </div>
+</div>
+</div><div class="col-lg-4 col-sm-6">
+  <div class="card mb-4" style="width: 18rem">
+    <img
+      src="./img/reloj-27.webp"
       class="card-img-top img-fluid"
       alt="Reloj café con detalles dorados. Para Hombre"
     />
