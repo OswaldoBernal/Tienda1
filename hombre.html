@@ -14,7 +14,7 @@
     />
     <!-- Favicon -->
     <!-- Estilos CSS Files -->
-    <link rel="stylesheet" href="/pac/aos/aos.css" />
+    <link rel="stylesheet" href="./aos/aos.css" />
     <!-- Estilos CSS -->
     <link rel="stylesheet" href="./css/bootstrap.min.css" />
     <link rel="stylesheet" href="./css/style.css" />
@@ -27,76 +27,46 @@
       <!--navbar-->
       <nav class="navbar bg-body-tertiary fixed-top">
         <div class="container-fluid">
-          <img
-            class="LOGOFOTO"
-            src="/img/Absolute_Reality_v16_Generate_me_a_simple_logo_of_the_letter_A_2-removebg-preview.png"
-          />
-          <a class="navbar-brand" href="#">AURUM</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasNavbar"
-            aria-controls="offcanvasNavbar"
-            aria-label="Toggle navigation"
-          >
+          <img class="LOGOFOTO" src="./img/logo1.webp">
+          <a class="navbar-brand" href="#" >AURUM</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div
-            class="offcanvas offcanvas-end"
-            tabindex="-1"
-            id="offcanvasNavbar"
-            aria-labelledby="offcanvasNavbarLabel"
-          >
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
             <div class="offcanvas-header">
               <h5 class="offcanvas-title" id="offcanvasNavbarLabel">AURUM</h5>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-              ></button>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
               <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#"
-                    >Inicio</a
-                  >
+                  <a class="nav-link active" aria-current="page" href="#">Inicio</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">Carro de Compra</a>
                 </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Favoritos</a>
+                </li>
                 <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Categorias
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#hombre">Hombre</a></li>
-                    <li><a class="dropdown-item" href="#mujer">Mujer </a></li>
+                    <li><a class="dropdown-item" href="hombre.html">Hombre</a></li>
+                    <li><a class="dropdown-item" href="mujer.html">Mujer
+                    </a></li>
+                    <li><a class="dropdown-item" href="unisex.html">Unisex</a></li>
                     <li>
-                      <hr class="dropdown-divider" />
+                      <hr class="dropdown-divider">
                     </li>
-                    <li><a class="dropdown-item" href="#unisex">Unisex</a></li>
+                    <li><a class="dropdown-item" href="personalizar.html">Personalizar</a></li>
                   </ul>
                 </li>
               </ul>
               <form class="d-flex mt-3" role="search">
-                <input
-                  class="form-control me-2"
-                  type="search"
-                  placeholder="Buscar"
-                  aria-label="Search"
-                />
-                <button class="btn btn-outline-success" type="submit">
-                  Buscar
-                </button>
+                <input type="text" name="Buscar" placeholder="Buscar..">
+                <button class="btn btn-outline-success" type="submit">Buscar</button>
               </form>
             </div>
           </div>
@@ -112,6 +82,21 @@
       </section>
     </header>
     <main>
+      <main><div class="alert success" data-aos="fade-up">
+        <span class="closebtn">&times;</span>
+        Hasta <strong>20%</strong> descuento en tu primer compra cuando te combiertes en un miembro de AURUM</div>
+        <script>
+          var close = document.getElementsByClassName("closebtn");
+          var i;
+          
+          for (i = 0; i < close.length; i++) {
+            close[i].onclick = function(){
+              var div = this.parentElement;
+              div.style.opacity = "0";
+              setTimeout(function(){ div.style.display = "none"; }, 600);
+            }
+          }
+          </script></main>
       <div class="container">
         <div class="row" data-aos="fade-up" id="catalogo">
           <div class="col-lg-4 col-sm-6">
@@ -139,7 +124,7 @@
           <div class="col-lg-4 col-sm-6">
             <div class="card mb-4" style="width: 18rem">
               <img
-                src="./img/reloj-12.webp"
+                src="./img/reloj-2.webp"
                 class="card-img-top img-fluid"
                 alt="Reloj Plateado con detalles rojos"
               />
@@ -161,7 +146,7 @@
           <div class="col-lg-4 col-sm-6">
             <div class="card mb-4" style="width: 18rem">
               <img
-                src="./img/reloj-4.webp"
+                src="./img/reloj-3.webp"
                 class="card-img-top img-fluid"
                 alt="Reloj con detalles dorado para Dama"
               />
@@ -183,7 +168,7 @@
           <div class="col-lg-4 col-sm-6">
             <div class="card mb-4" style="width: 18rem">
               <img
-                src="./img/reloj-5.webp"
+                src="./img/reloj-4.webp"
                 class="card-img-top img-fluid"
                 alt="Reloj basado en temporada de Otoño, decorado con hojas de la temporada"
               />
@@ -205,7 +190,7 @@
           <div class="col-lg-4 col-sm-6">
             <div class="card mb-4" style="width: 18rem">
               <img
-                src="./img/reloj-3.webp"
+                src="./img/reloj-5.webp"
                 class="card-img-top img-fluid"
                 alt="Reloj plateado ocn fondo de colores pasteles"
               />
@@ -246,6 +231,11 @@
               </div>
             </div>
           </div>
+          <main>
+            <div class="alert alert-info" data-aos="fade-left">
+              <strong>Info!</strong> .
+            </div>
+          </main>
           <div class="col-lg-4 col-sm-6">
             <div class="card mb-4" style="width: 18rem">
               <img
@@ -293,7 +283,7 @@
           <div class="col-lg-4 col-sm-6">
             <div class="card mb-4" style="width: 18rem">
               <img
-                src="./img/reloj-10.webp"
+                src="./img/reloj-9.webp"
                 class="card-img-top img-fluid"
                 alt="Reloj negro con detalles dorados para Dama"
               />
@@ -315,7 +305,7 @@
           <div class="col-lg-4 col-sm-6">
             <div class="card mb-4" style="width: 18rem">
               <img
-                src="./img/reloj-9.webp"
+                src="./img/reloj-10.webp"
                 class="card-img-top img-fluid"
                 alt="Reloj base azul plateado con tintes dorados, unisex"
               />
@@ -359,7 +349,7 @@
           <div class="col-lg-4 col-sm-6">
             <div class="card mb-4" style="width: 18rem">
               <img
-                src="./img/reloj-2.webp"
+                src="./img/reloj-12.webp"
                 class="card-img-top img-fluid"
                 alt="Reloj café con detalles dorados. Para Hombre"
               />
@@ -378,6 +368,11 @@
               </div>
             </div>
           </div>
+          <main>
+            <div class="alert alert-info" data-aos="fade-right">
+              <strong>Info!</strong> .
+            </div>
+          </main>
           <div class="col-lg-4 col-sm-6">
             <div class="card mb-4" style="width: 18rem">
               <img
@@ -425,7 +420,7 @@
   <div class="col-lg-4 col-sm-6">
     <div class="card mb-4" style="width: 18rem">
       <img
-        src="./img/reloj-18.webp"
+        src="./img/reloj-15.webp"
         class="card-img-top img-fluid"
         alt="Reloj café con detalles dorados. Para Hombre"
       />
@@ -491,7 +486,7 @@
 <div class="col-lg-4 col-sm-6">
   <div class="card mb-4" style="width: 18rem">
     <img
-      src="./img/reloj-15.webp"
+      src="./img/reloj-18.webp"
       class="card-img-top img-fluid"
       alt="Reloj café con detalles dorados. Para Hombre"
     />
@@ -509,6 +504,11 @@
     </div>
 </div>
 </div>
+<main>
+  <div class="alert alert-info" data-aos="fade-left">
+    <strong>Info!</strong> .
+  </div>
+</main>
 <div class="col-lg-4 col-sm-6">
   <div class="card mb-4" style="width: 18rem">
     <img
@@ -552,6 +552,156 @@
     </div>
 </div>
 </div>
+<div class="col-lg-4 col-sm-6">
+  <div class="card mb-4" style="width: 18rem">
+    <img
+      src="./img/reloj-21.webp"
+      class="card-img-top img-fluid"
+      alt="Reloj café con detalles dorados. Para Hombre"
+    />
+    <div class="card-body">
+      <h5 class="card-title">Heavy Duty</h5>
+      <p class="card-text">
+        Some quick example text to build on the card title and make up
+        the bulk of the card's content.
+      </p>
+      <button type="button" class="btn btn-outline-secondary">
+        Buy Now
+      </button>
+      <button type="button" class="btn btn-outline-secondary">
+        Add to Cart
+      </button>
+    </div>
+</div>
+</div><div class="col-lg-4 col-sm-6">
+  <div class="card mb-4" style="width: 18rem">
+    <img
+      src="./img/reloj-22.webp"
+      class="card-img-top img-fluid"
+      alt="Reloj café con detalles dorados. Para Hombre"
+    />
+    <div class="card-body">
+      <h5 class="card-title">Heavy Duty</h5>
+      <p class="card-text">
+        Some quick example text to build on the card title and make up
+        the bulk of the card's content.
+      </p>
+      <button type="button" class="btn btn-outline-secondary">
+        Buy Now
+      </button>
+      <button type="button" class="btn btn-outline-secondary">
+        Add to Cart
+      </button>
+    </div>
+</div>
+</div>
+<div class="col-lg-4 col-sm-6">
+  <div class="card mb-4" style="width: 18rem">
+    <img
+      src="./img/reloj-23.webp"
+      class="card-img-top img-fluid"
+      alt="Reloj café con detalles dorados. Para Hombre"
+    />
+    <div class="card-body">
+      <h5 class="card-title">Heavy Duty</h5>
+      <p class="card-text">
+        Some quick example text to build on the card title and make up
+        the bulk of the card's content.
+      </p>
+      <button type="button" class="btn btn-outline-secondary">
+        Buy Now
+      </button>
+      <button type="button" class="btn btn-outline-secondary">
+        Add to Cart
+      </button>
+    </div>
+</div>
+</div><div class="col-lg-4 col-sm-6">
+  <div class="card mb-4" style="width: 18rem">
+    <img
+      src="./img/reloj-24.webp"
+      class="card-img-top img-fluid"
+      alt="Reloj café con detalles dorados. Para Hombre"
+    />
+    <div class="card-body">
+      <h5 class="card-title">Heavy Duty</h5>
+      <p class="card-text">
+        Some quick example text to build on the card title and make up
+        the bulk of the card's content.
+      </p>
+      <button type="button" class="btn btn-outline-secondary">
+        Buy Now
+      </button>
+      <button type="button" class="btn btn-outline-secondary">
+        Add to Cart
+      </button>
+    </div>
+</div>
+</div>
+<div class="col-lg-4 col-sm-6">
+  <div class="card mb-4" style="width: 18rem">
+    <img
+      src="./img/reloj-25.webp"
+      class="card-img-top img-fluid"
+      alt="Reloj café con detalles dorados. Para Hombre"
+    />
+    <div class="card-body">
+      <h5 class="card-title">Heavy Duty</h5>
+      <p class="card-text">
+        Some quick example text to build on the card title and make up
+        the bulk of the card's content.
+      </p>
+      <button type="button" class="btn btn-outline-secondary">
+        Buy Now
+      </button>
+      <button type="button" class="btn btn-outline-secondary">
+        Add to Cart
+      </button>
+    </div>
+</div>
+</div><div class="col-lg-4 col-sm-6">
+  <div class="card mb-4" style="width: 18rem">
+    <img
+      src="./img/reloj-26.webp"
+      class="card-img-top img-fluid"
+      alt="Reloj café con detalles dorados. Para Hombre"
+    />
+    <div class="card-body">
+      <h5 class="card-title">Heavy Duty</h5>
+      <p class="card-text">
+        Some quick example text to build on the card title and make up
+        the bulk of the card's content.
+      </p>
+      <button type="button" class="btn btn-outline-secondary">
+        Buy Now
+      </button>
+      <button type="button" class="btn btn-outline-secondary">
+        Add to Cart
+      </button>
+    </div>
+</div>
+</div><div class="col-lg-4 col-sm-6">
+  <div class="card mb-4" style="width: 18rem">
+    <img
+      src="./img/reloj-27.webp"
+      class="card-img-top img-fluid"
+      alt="Reloj café con detalles dorados. Para Hombre"
+    />
+    <div class="card-body">
+      <h5 class="card-title">Heavy Duty</h5>
+      <p class="card-text">
+        Some quick example text to build on the card title and make up
+        the bulk of the card's content.
+      </p>
+      <button type="button" class="btn btn-outline-secondary">
+        Buy Now
+      </button>
+      <button type="button" class="btn btn-outline-secondary">
+        Add to Cart
+      </button>
+    </div>
+</div>
+</div>
 <nav aria-label="Page navigation example">
   <ul class="pagination justify-content-center">
     <li class="page-item disabled">
@@ -566,6 +716,7 @@
   </ul>
 </nav>
     </main>
+    <!--Footer-->
     <footer class="footer" data-aos="fade">
       <a id="boo">Correo:</a><br>
       <a id="boo" href="oswaldobernal2003@gmail.com">oswaldobernal2003@gmail.com</a><br>
@@ -574,8 +725,8 @@
         Políticas de Privacidad
       </a>
     </footer>
-    <script src="/pac/aos/aos.js"></script>
-    <script src="/pac/js/myscript.js"></script>
+    <script src="./aos/aos.js"></script>
+    <script src="./js/myscript.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
       integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
@@ -587,5 +738,22 @@
       crossorigin="anonymous"
     ></script>
   </body>
-
 </html>
+<!--
+  <div class="alert success">
+  <span class="closebtn">&times;</span>  
+  <strong>Success!</strong> Indicates a successful or positive action.
+</div>
+<script>
+  var close = document.getElementsByClassName("closebtn");
+  var i;
+  
+  for (i = 0; i < close.length; i++) {
+    close[i].onclick = function(){
+      var div = this.parentElement;
+      div.style.opacity = "0";
+      setTimeout(function(){ div.style.display = "none"; }, 600);
+    }
+  }
+  </script>
+-->
