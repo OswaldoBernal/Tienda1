@@ -30,7 +30,7 @@
     font-size: xx-large;
 }
 .LOGOFOTO{
-    width: 50px;
+    width: 45px;
     height: 60px;
 }
 .nav-link {
@@ -62,6 +62,12 @@
     padding-top: 30px;
     padding-bottom: 30px;
 }
+.box1{
+    border: 5px;
+    border-color: black;
+    width: 1000px;
+    height: 400px;
+}
 .card-title {
     font-family: 'Oswald', sans-serif;
 }
@@ -78,20 +84,18 @@
     font-style: oblique;
     font-size: small;
 }
-/*
+.Link{
+    font-weight: bolder;
+    font-style: italic;
+}
 .alert {
   padding: 20px;
-  background-color: #f44336;
+  background-color: #1d4633;
   color: white;
   opacity: 1;
   transition: opacity 0.6s;
   margin-bottom: 15px;
 }
-
-.alert.success {background-color: #04AA6D;}
-.alert.info {background-color: #2196F3;}
-.alert.warning {background-color: #ff9800;}
-
 .closebtn {
   margin-left: 15px;
   color: white;
@@ -102,14 +106,13 @@
   cursor: pointer;
   transition: 0.3s;
 }
-
 .closebtn:hover {
-  color: black;
+  color: white;
 }
-*/
 .footer {
     background: linear-gradient(90deg, #0b3e27, #197149);
     color: white;
     text-align: center;
-    padding: 2rem;
+    padding: 1rem;
 }
+
