@@ -7,6 +7,24 @@
     background-size: cover ;
     height:100vh;  
 }
+.inicioh{
+    background-image: url("../img/menwatch.webp");
+    background-position: center;
+    background-size: cover ;
+    height:100vh;  
+}
+.iniciom{
+    background-image: url("../img/womenwatch.webp");
+    background-position: center;
+    background-size: cover ;
+    height:100vh;  
+}
+.iniciou{
+    background-image: url("../img/Unisex.webp");
+    background-position: center;
+    background-size: cover ;
+    height:100vh;  
+}
 .name-logo {
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
@@ -32,6 +50,9 @@
 .LOGOFOTO{
     width: 45px;
     height: 60px;
+}
+.bi-person-circle{
+    margin-right:  0px;
 }
 .nav-link {
     margin-right: 10px;
@@ -115,4 +136,8 @@
     text-align: center;
     padding: 1rem;
 }
-
+.Formulario{
+    padding: 40px;
+    border-color: black;
+    border: 2px;
+}
