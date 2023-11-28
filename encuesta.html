@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+          <img class="LOGOFOTO col-lg-3" class="col" src="./img/logo1.webp" />
+          <div>
+            <a class="navbar-brand col-md-4" class="col" href="index.html"
+              >AURUM</a
+            >
+          </div>
+          <!--Boton de carrito-->
+          <div type="button" class="col-sm">
+            <i
+              class="bi bi-cart"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasRight"
+              aria-controls="offcanvasRight"
+              ><span id="aumento">0</span></i
+            >
+          </div>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasRight"
+            aria-labelledby="offcanvasRightLabel"
+          >
+            <div class="offcanvas-body1">
+              <h5 class="offcanvas-title offcarro" id="offcanvasRightLabel">
+                Mi Carro
+              </h5>
+            </div>
+            <div class="offcanvas-body1">
+              <div class="listCart">
+                <div class="item">
+                  <div class="image">
+                    <img src="./img/reloj-1.webp" alt="" />
+                  </div>
+                </div>
+                <div class="name">Name</div>
+                <div class="totalPrice">$3500</div>
+                <div class="quantity">
+                  <span class="minus"><</span>
+                  <span>0</span>
+                  <span class="plus">></span>
+                </div>
+              </div>
+              <div class="button">
+                <button class="Close">Close</button>
+                <button class="CheckOut">CheckOut</button>
+              </div>
+            </div>
+          </div>
+          <!--/Boton de caritto-->
+          <div type="button" class="col-sm">
+            <a class="profile" href="registro.html"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                fill="white"
+                class="bi bi-person"
+                viewBox="0 0 18 18"
+              >
+                <path
+                  d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"
+                /></svg
+            ></a>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">AURUM</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="index.html"
+                    >Inicio</a
+                  >
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Categorias
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="hombre.html">Hombre</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="mujer.html">Mujer </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="unisex.html">Unisex</a>
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="personalizar.html"
+                        >Personalizar</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="d-flex mt-3" role="search">
+                <input type="text" name="Buscar" placeholder="Buscar.." />
+                <button class="btn btn-outline-success" type="submit">
+                  Buscar
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="inicio">
+        <h2 class="titulo">TITULO</h2>
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <p class="texto">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
+                quae vel nemo, nobis maiores cupiditate possimus vero facere,
+                quos veritatis accusamus tempore. Aspernatur mollitia, dolor vel
+                eos architecto tempora reprehenderit. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Eaque temporibus quas consequatur
+                nisi eum quasi est tempore obcaecati molestiae enim ad incidunt
+                alias ratione praesentium eveniet nam, laborum pariatur!
+                Expedita.
+              </p>
+              <p class="texto">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
+                quae vel nemo, nobis maiores cupiditate possimus vero facere,
+                quos veritatis accusamus tempore. Aspernatur mollitia, dolor vel
+                eos architecto tempora reprehenderit. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Eaque temporibus quas consequatur
+                nisi eum quasi est tempore obcaecati molestiae enim ad incidunt
+                alias ratione praesentium eveniet nam, laborum pariatur!
+                Expedita.
+              </p>
+              <div class="text-center py-5">
+                <a class="btn btn-info" href="" type="button">INICIO</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer"></footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
