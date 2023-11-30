@@ -38,18 +38,18 @@
 .navbar-brand{
     font-family: serif;
     font-size: xx-large;
-    color: white;
+    color: #eee;
     text-align: center;
-    margin-left: 20px;
+    margin-left: 15px;
 }
 /*Foto del logo*/
 .LOGOFOTO{
-    width: 45px;
-    height: 60px;
+    width: 35px;
+    height: 40px;
 }
 .nav-link {
     font-family: 'Raleway', sans-serif;
-    color: #eee;
+    color: white;
     font-weight: 600;
     font-size: clamp(1rem, 1rem + 0.3125vw, 1rem);
     transition: all .5s ease-in-out;
@@ -74,13 +74,21 @@
    color:#197149;
    text-decoration: underline;
 }
-/*icon de perfil*/
-.bi-person{
-    width: 25px;
-    height: 25px;
-    color: #eee;
+/*icon de perfil,fav,carro*/
+.perfil{
+    color: black;
     margin-right: 15px;
 }
+.fav{
+    color: black;
+    margin-left: -80px;
+    margin-right: 15px;
+}
+.cart{
+    color: black;
+    margin-right: 15px;
+}
+/*Cartas de Producto*/
 .card-title {
     font-family: 'Oswald', sans-serif;
 }
@@ -119,8 +127,27 @@
 .footer {
     background: linear-gradient(90deg, #0b3e27, #197149);
     color: white;
-    text-align: center;
     padding: 1rem;
+}
+.face{
+    width: 25px;
+    height: 30px;  
+    margin-right: 20px;  
+}
+.inta{
+    width: 25px;
+    height: 30px;
+    margin-right: 20px; 
+}
+.tik{
+    width: 25px;
+    height: 30px;
+    margin-right: 20px; 
+}
+.twitterX{
+    width: 25px;
+    height: 30px;
+    margin-right: 20px; 
 }
 /*Encuesta*/
 .titulo{
