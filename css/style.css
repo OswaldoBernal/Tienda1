@@ -129,6 +129,12 @@
 .col {
     margin-top: 2rem;
 }
+.card{
+    transition: all 0.3s;
+}
+.card:hover{
+    transform: scale(1.05);
+}
 /*Alerta de descuento*/
 .alert {
   padding: 20px;
@@ -182,14 +188,13 @@
     text-align: center;
     color: aliceblue;
     letter-spacing: 10px;
-    padding-top: 20px;
+    padding-top: 10px;
 
 }
 .texto{
     text-align: center;
     color: aliceblue;
     word-spacing: 0.9rem;
-    padding-top: 30px;
     font-size: 1.5rem;
     text-shadow: 2px 2px 4px rgba(4, 224, 253, 0.5);
 }
